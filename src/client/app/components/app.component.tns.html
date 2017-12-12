@@ -1,0 +1,15 @@
+<ActionBar title="任务大厅" class="action-bar">
+    <ActionItem nsRouterLink="/about" ios.position="left" android.position="popup">
+        <Button [text]="'我的'" class="action-item"></Button>
+    </ActionItem>
+    <ActionItem nsRouterLink="/about" ios.position="right" android.position="popup">
+        <Button [text]="'语音播报'" class="action-item"></Button>
+    </ActionItem>
+</ActionBar>
+<StackLayout class="p-0 m-0">
+    <ScrollView>
+        <GridLayout>
+            <page-router-outlet></page-router-outlet>
+        </GridLayout>
+    </ScrollView>
+</StackLayout>
