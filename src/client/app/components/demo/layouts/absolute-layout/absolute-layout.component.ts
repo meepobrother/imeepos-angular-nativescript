@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
     moduleId: module.id,
     selector: 'sd-absolute-layout',
     templateUrl: 'absolute-layout.component.html',
-    styleUrls: ['absolute-layout.component.css']
+    styleUrls: ['absolute-layout.component.scss']
 })
 export class AbsoluteLayoutComponent implements OnInit {
     ngOnInit() { 

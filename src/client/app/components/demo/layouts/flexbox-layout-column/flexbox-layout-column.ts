@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
     moduleId: module.id,
     selector: 'sd-flexbox-layout-column',
     templateUrl: 'flexbox-layout-column.html',
-    styleUrls: ['flexbox-layout-column.scss']
+    styleUrls: ['flexbox-layout-column.css']
 })
 export class FlexboxLayoutColumnComponent implements OnInit {
     ngOnInit() { 

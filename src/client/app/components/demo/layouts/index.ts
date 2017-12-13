@@ -7,6 +7,16 @@ import { FlexboxLayoutRowReverseComponent } from './flexbox-layout-row-reverse/f
 import { FlexboxLayoutRowComponent } from './flexbox-layout-row/flexbox-layout-row';
 
 
+import { FlexboxLayoutFlexEndComponent } from './flexbox-layout-flex-end/flexbox-layout-flex-end';
+import { FlexboxLayoutMultiComponent } from './flexbox-layout-multi/flexbox-layout-multi';
+import { FlexboxLayoutOrderComponent } from './flexbox-layout-order/flexbox-layout-order';
+import { FlexboxLayoutSpaceAroundComponent } from './flexbox-layout-space-around/flexbox-layout-space-around';
+import { FlexboxLayoutSpaceBetweenComponent } from './flexbox-layout-space-between/flexbox-layout-space-between';
+
+import { FlexboxLayoutWrapComponent } from './flexbox-layout-wrap/flexbox-layout-wrap';
+import { FlexboxLayoutWrapReserveComponent } from './flexbox-layout-wrap-reverse/flexbox-layout-wrap-reverse';
+
+
 export const LayoutsRoutes: Array<any> = [
     {
         path: 'test/layouts/absolute',
@@ -66,16 +76,6 @@ export const LayoutsRoutes: Array<any> = [
         component: FlexboxLayoutWrapReserveComponent
     },
 ];
-
-import { FlexboxLayoutFlexEndComponent } from './flexbox-layout-flex-end/flexbox-layout-flex-end';
-import { FlexboxLayoutMultiComponent } from './flexbox-layout-multi/flexbox-layout-multi';
-import { FlexboxLayoutOrderComponent } from './flexbox-layout-order/flexbox-layout-order';
-import { FlexboxLayoutSpaceAroundComponent } from './flexbox-layout-space-around/flexbox-layout-space-around';
-import { FlexboxLayoutSpaceBetweenComponent } from './flexbox-layout-space-between/flexbox-layout-space-between';
-
-import { FlexboxLayoutWrapComponent } from './flexbox-layout-wrap/flexbox-layout-wrap';
-import { FlexboxLayoutWrapReserveComponent } from './flexbox-layout-wrap-reverse/flexbox-layout-wrap-reverse';
-
 
 
 export const LayoutsComponents = [

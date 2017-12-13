@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
     moduleId: module.id,
     selector: 'sd-flexbox-layout',
     templateUrl: 'flexbox-layout.html',
-    styleUrls: ['flexbox-layout.scss']
+    styleUrls: ['flexbox-layout.css']
 })
 export class FlexboxLayoutComponent implements OnInit {
     type: string = 'row-reverse';
