@@ -14,8 +14,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // app
 import { AppComponent } from './app/components/app.component';
-import { AboutComponent } from './app/components/about/about.component';
-import { HomeComponent } from './app/components/home/home.component';
+import { APP_COMPONENTS } from './app/components';
 import { routes } from './app/components/app.routes';
 
 // feature modules
@@ -45,8 +44,7 @@ import { ConsoleService, ConsoleTarget, LogLevel } from './app/modules/core/inde
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent
+    ...APP_COMPONENTS
   ],
   schemas: [
     NO_ERRORS_SCHEMA,

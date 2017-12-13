@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   public tasks: any[] = [];
   warning: string = '没有任何提示';
-  
+
   constructor(
     private store: Store<IAppState>,
     public routerext: RouterExtensions,
@@ -126,4 +126,14 @@ export class HomeComponent implements OnInit {
   onScroll(e: any) {
     this.warning = '滑动了';
   }
+
+  onTap(link: any) {
+    this.routerext.navigate(link, {
+      transition: {
+        duration: 300,
+        name: 'slideTop'
+      }
+    });
+  }
+
 }

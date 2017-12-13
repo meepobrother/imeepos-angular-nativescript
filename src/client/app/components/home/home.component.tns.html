@@ -1,16 +1,12 @@
 <ActionBar [title]="'语音播报'" class="action-bar">
     <NavigationButton [text]="'任务大厅'"></NavigationButton>
 </ActionBar>
-<ScrollView (scroll)="onScroll($event)">
-    <ListView [items]="tasks" row="1" colSpan="2" height="500">
-        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
-            <StackLayout orientation="vertical">
-                <Image horizontalAlignment="left" style="width: 50; height: 50;" [src]="item.avatar"></Image>
-                <Label horizontalAlignment="center" [text]="item.nickname"></Label>
-                <Label horizontalAlignment="center" text="Angular Seed Advanced is a starter project that implements best practices in coding, building and testing Angular 2 apps. Additionally it adds various enhancements and integrations for large global projects."
-                    textWrap="true" class="h4"></Label>
-            </StackLayout>
-        </ng-template>
-    </ListView>
-</ScrollView>
-<Label [text]="warning"></Label>
+<FlexboxLayout flexDirection="column">
+    <Button class="btn btn-primary btn-active" text="absolute" (tap)="onTap(['/test/layouts/absolute'])"></Button>
+    <Button class="btn btn-primary btn-active" text="dock" (tap)="onTap(['/test/layouts/dock'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox" (tap)="onTap(['/test/layouts/flexbox'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox column reverse" (tap)="onTap(['test/layouts/flexbox-column-reverse'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox column " (tap)="onTap(['test/layouts/flexbox-column'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox row reverse" (tap)="onTap(['test/layouts/flexbox-row-reverse'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox row" (tap)="onTap(['test/layouts/flexbox-row'])"></Button>
+</FlexboxLayout>
