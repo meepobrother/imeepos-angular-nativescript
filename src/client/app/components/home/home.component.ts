@@ -19,7 +19,8 @@ export class HomeComponent implements OnInit {
   public newName: string;
 
   public tasks: any[] = [];
-
+  warning: string = '没有任何提示';
+  
   constructor(
     private store: Store<IAppState>,
     public routerext: RouterExtensions,
@@ -35,6 +36,68 @@ export class HomeComponent implements OnInit {
       nickname: '杨明明',
       avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
     });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+    this.tasks.push({
+      title: '我的任务',
+      nickname: '杨明明',
+      avatar: 'https://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg'
+    });
+
   }
 
   /*
@@ -60,8 +123,7 @@ export class HomeComponent implements OnInit {
 
 
   // add
-
   onScroll(e: any) {
-    this.c.log(e);
+    this.warning = '滑动了';
   }
 }
