@@ -5,13 +5,11 @@ import { Observable } from 'rxjs/Observable';
 import { RouterExtensions } from '../../../../modules/core';
 @Component({
     moduleId: module.id,
-    selector: 'sd-flexbox-layout',
-    templateUrl: 'flexbox-layout.html',
-    styleUrls: ['flexbox-layout.css']
+    selector: 'sd-components',
+    templateUrl: 'components.html',
+    styleUrls: ['components.scss']
 })
-export class FlexboxLayoutComponent implements OnInit {
-    type: string = 'row-reverse';
-
+export class ComponentsIndex implements OnInit {
     constructor(
         public routerext: RouterExtensions,
     ) { }

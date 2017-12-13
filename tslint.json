@@ -1,5 +1,6 @@
 {
-  "extends": "./tools/config/seed.tslint.json",
-  "rules": {
-  }
+    "extends": "./tools/config/seed.tslint.json",
+    "rules": {
+        "quotemark": false
+    }
 }

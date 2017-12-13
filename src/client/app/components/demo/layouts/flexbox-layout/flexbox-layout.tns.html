@@ -1,12 +1,19 @@
-<ActionBar [title]="'组件'" class="action-bar">
-    <NavigationButton [text]="'flexbox layout'"></NavigationButton>
+<ActionBar [title]="'布局'" class="action-bar">
+    <NavigationButton [text]="'所有组件'"></NavigationButton>
 </ActionBar>
 
-<FlexboxLayout flexDirection="row-reverse">
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="1" backgroundColor="#EEEEEE"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="2" backgroundColor="#DDDDDD"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="3" backgroundColor="#CCCCCC"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="4" backgroundColor="#BBBBBB"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="5" backgroundColor="#AAAAAA"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="6" backgroundColor="#999999"></Label>
+<FlexboxLayout flexDirection="column">
+    <Button class="btn btn-primary btn-active" text="绝对布局" (tap)="onTap(['/test/layouts/absolute'])"></Button>
+    <Button class="btn btn-primary btn-active" text="码头布局" (tap)="onTap(['/test/layouts/dock'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox column reverse" (tap)="onTap(['test/layouts/flexbox-column-reverse'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox column " (tap)="onTap(['test/layouts/flexbox-column'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox row reverse" (tap)="onTap(['test/layouts/flexbox-row-reverse'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox row" (tap)="onTap(['test/layouts/flexbox-row'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox flex-end" (tap)="onTap(['test/layouts/flexbox-flex-end'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox multi" (tap)="onTap(['test/layouts/flexbox-multi'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox order" (tap)="onTap(['test/layouts/flexbox-order'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox space around" (tap)="onTap(['test/layouts/flexbox-space-around'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox space between" (tap)="onTap(['test/layouts/flexbox-space-between'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox wrap" (tap)="onTap(['test/layouts/flexbox-wrap'])"></Button>
+    <Button class="btn btn-primary btn-active" text="flexbox wrap reserve" (tap)="onTap(['test/layouts/flexbox-wrap-reverse'])"></Button>
 </FlexboxLayout>

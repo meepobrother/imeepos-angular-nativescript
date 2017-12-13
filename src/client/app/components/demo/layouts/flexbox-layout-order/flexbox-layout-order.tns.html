@@ -2,11 +2,9 @@
     <NavigationButton [text]="'flexbox layout'"></NavigationButton>
 </ActionBar>
 
-<FlexboxLayout flexDirection="row-reverse">
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="1" backgroundColor="#EEEEEE"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="2" backgroundColor="#DDDDDD"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="3" backgroundColor="#CCCCCC"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="4" backgroundColor="#BBBBBB"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="5" backgroundColor="#AAAAAA"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="6" backgroundColor="#999999"></Label>
+<FlexboxLayout flexDirection="row" class="p-15" color="white">
+    <!-- Control the order in which elements appear in the flex container -->
+    <Label order="3" class="p-15 text-center font-weight-bold" backgroundColor="#965251" text="First"></Label>
+    <Label order="2" class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="Second"></Label>
+    <Label order="1" class="p-15 text-center font-weight-bold" backgroundColor="#F69256" text="Third"></Label>
 </FlexboxLayout>

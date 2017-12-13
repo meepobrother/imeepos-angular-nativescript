@@ -2,11 +2,18 @@
     <NavigationButton [text]="'flexbox layout'"></NavigationButton>
 </ActionBar>
 
-<FlexboxLayout flexDirection="row-reverse">
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="1" backgroundColor="#EEEEEE"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="2" backgroundColor="#DDDDDD"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="3" backgroundColor="#CCCCCC"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="4" backgroundColor="#BBBBBB"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="5" backgroundColor="#AAAAAA"></Label>
-    <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="6" backgroundColor="#999999"></Label>
+<FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-15" backgroundColor="lightgray">
+    <Label class="h3 p-15" text="Gihub issue labels:"></Label>
+    <Label flexWrapBefore="true" class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="S: High" borderRadius="5" backgroundColor="#F93822" color="white"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="T: Feature" borderRadius="5" backgroundColor="green" color="white"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="3 - In Progress" borderRadius="5" backgroundColor="#A6BBC8"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="S: Ullamcorper" borderRadius="5" backgroundColor="#F93822" color="white"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="T: Vulputate" borderRadius="5" backgroundColor="green" color="white"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="2 - Egestas magna" borderRadius="5" backgroundColor="#A6BBC8"></Label>
+    <Label flexWrapBefore="true" class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="S: High" borderRadius="5" backgroundColor="#F93822" color="white"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="T: Phasellus" borderRadius="5" backgroundColor="green" color="white"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="Nullam" borderRadius="5" backgroundColor="#A6BBC8"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="T:Question" borderRadius="5" backgroundColor="#FFD900"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="S:Medium" borderRadius="5" backgroundColor="#FFD900"></Label>
+    <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center" text="duplicate" borderRadius="5" backgroundColor="#A6BBC8"></Label>
 </FlexboxLayout>
